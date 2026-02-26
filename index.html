@@ -3,22 +3,547 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Мой сайт</title>
+  <title>Консалтинг для отелей и санаториев — рост продаж и дохода</title>
+  <meta name="description" content="Помогаем отелям и санаториям увеличивать выручку: стратегия, маркетинг, продажи, revenue management, сайт и упаковка." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="wrap">
-    <h1>Привет! Это мой первый сайт</h1>
-    <p>Если ты это видишь — публикация работает ✅</p>
-    <a class="btn" href="#contact">Связаться</a>
+  <!-- Skip link -->
+  <a class="skip" href="#main">Перейти к содержанию</a>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand__mark">●</span>
+        <span class="brand__text">ВашКонсалтинг</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="sr">Меню</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#services">Услуги</a>
+          <a class="nav__link" href="#approach">Подход</a>
+          <a class="nav__link" href="#cases">Кейсы</a>
+          <a class="nav__link" href="#pricing">Пакеты</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+          <a class="btn btn--sm btn--ghost" href="#audit">Бесплатный аудит</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <h2>О проекте</h2>
-    <p>Здесь будет описание.</p>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Консалтинг для отелей и санаториев</p>
+          <h1 class="h1">Рост выручки, загрузки и маржинальности — системно, измеримо, без «магии»</h1>
+          <p class="lead">
+            Помогаем объектам размещения выстроить стратегию, упаковку, маркетинг, продажи и revenue-процессы.
+            Результат — понятный план действий и внедрение под KPI.
+          </p>
 
-    <h2 id="contact">Контакты</h2>
-    <p>Email: example@mail.com</p>
+          <div class="hero__cta">
+            <a class="btn" href="#audit">Получить бесплатный аудит</a>
+            <a class="btn btn--ghost" href="#cases">Смотреть кейсы</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust__row">
+              <div class="trust__item">
+                <span class="trust__num">+X%</span>
+                <span class="trust__label">к ADR / RevPAR</span>
+              </div>
+              <div class="trust__item">
+                <span class="trust__num">X–Y</span>
+                <span class="trust__label">месяцев до результата</span>
+              </div>
+              <div class="trust__item">
+                <span class="trust__num">N+</span>
+                <span class="trust__label">проектов в HoReCa</span>
+              </div>
+            </div>
+            <p class="muted small">*Заглушки — подставишь свои цифры после первых проектов/аналитики.</p>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card card--glass">
+            <h3 class="h3">Что вы получите за 15–30 минут</h3>
+            <ul class="list">
+              <li>3–5 главных точек роста выручки</li>
+              <li>Ошибки в сайте/упаковке и их цена</li>
+              <li>Рекомендации по каналам (OTA/Direct/CRM)</li>
+              <li>План быстрых улучшений на 14 дней</li>
+            </ul>
+
+            <div class="card__note">
+              <span class="badge">Бесплатно</span>
+              <span class="muted small">Без “продажного давления”. Можно просто забрать план.</span>
+            </div>
+
+            <a class="btn btn--wide" href="#audit">Записаться на аудит</a>
+            <p class="muted tiny">Нажимая кнопку, вы соглашаетесь с обработкой данных.</p>
+          </div>
+
+          <div class="hero__panel">
+            <div class="panel">
+              <p class="panel__title">Подходит, если:</p>
+              <ul class="ticks">
+                <li>падение загрузки / “проседает” межсезонье</li>
+                <li>слабые прямые продажи и CRM</li>
+                <li>неясное позиционирование и УТП</li>
+                <li>нет управляемого revenue-процесса</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container logos">
+        <p class="muted small">Работали/знаем рынок: (логотипы-заглушки)</p>
+        <div class="logos__grid" aria-label="Логотипы клиентов">
+          <div class="logo">Отель A</div>
+          <div class="logo">Санаторий B</div>
+          <div class="logo">Курорт C</div>
+          <div class="logo">Сеть D</div>
+          <div class="logo">Апарт-отель E</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Услуги</h2>
+          <p class="muted">Собираем систему продаж и маркетинга так, чтобы она работала без ручного героизма.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3 class="h3">Стратегия и позиционирование</h3>
+            <p>Сегменты, УТП, офферы, продуктовая линейка, сезонные сценарии, ценностные смыслы.</p>
+            <ul class="bullets">
+              <li>портреты ЦА и мотивации</li>
+              <li>карта конкурентов и отличия</li>
+              <li>продукт/пакеты/сезонность</li>
+            </ul>
+            <a class="link" href="#audit">Запросить разбор →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="h3">Revenue & продажи</h3>
+            <p>Ценообразование, тарифы, ограничения, прогнозирование, KPI, скрипты и конверсия.</p>
+            <ul class="bullets">
+              <li>ADR / RevPAR / GOP</li>
+              <li>план спроса и прайс-календарь</li>
+              <li>воронка и стандарты отдела</li>
+            </ul>
+            <a class="link" href="#pricing">Смотреть пакеты →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="h3">Маркетинг, сайт, упаковка</h3>
+            <p>Сайт как “продавец”: смыслы, офферы, доверие, SEO-основа, аналитика, лид-магниты.</p>
+            <ul class="bullets">
+              <li>структура лендинга/сайта</li>
+              <li>контент и доказательства</li>
+              <li>аналитика и события</li>
+            </ul>
+            <a class="link" href="#contacts">Обсудить задачу →</a>
+          </article>
+        </div>
+
+        <div class="grid grid--2 mt">
+          <article class="card card--soft">
+            <h3 class="h3">Дополнительно (по запросу)</h3>
+            <div class="tags">
+              <span class="tag">OTA-стратегия</span>
+              <span class="tag">CRM / рассылки</span>
+              <span class="tag">SMM / контент</span>
+              <span class="tag">Партнёрства</span>
+              <span class="tag">Обучение команды</span>
+              <span class="tag">Тайный гость</span>
+            </div>
+          </article>
+
+          <article class="card card--accent">
+            <h3 class="h3">Быстрый эффект за 14 дней</h3>
+            <p class="muted">Если нужно “сейчас”: делаем план быстрых правок + внедрение ключевых улучшений.</p>
+            <a class="btn btn--sm" href="#audit">Хочу быстрый план</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach / Process -->
+    <section class="section section--alt" id="approach">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Как мы работаем</h2>
+          <p class="muted">Прозрачный процесс: диагностика → план → внедрение → контроль KPI.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">01</div>
+            <div class="step__body">
+              <h3 class="h3">Диагностика</h3>
+              <p>Сайт, продукт, цены, каналы, воронка, отзывы, конкуренты, аналитика. Находим “узкие места”.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">02</div>
+            <div class="step__body">
+              <h3 class="h3">План роста</h3>
+              <p>Roadmap на 30/60/90 дней: что делаем, кто отвечает, какие метрики улучшаем.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">03</div>
+            <div class="step__body">
+              <h3 class="h3">Внедрение</h3>
+              <p>Работаем вместе с командой: материалы, шаблоны, скрипты, настройка процессов.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">04</div>
+            <div class="step__body">
+              <h3 class="h3">Контроль KPI</h3>
+              <p>Еженедельные срезы: конверсия, ADR/RevPAR, лиды, заявки, доля direct и повторные продажи.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div class="callout__text">
+            <h3 class="h3">Нужен быстрый аудит?</h3>
+            <p class="muted">Оставь контакты — пришлём краткий разбор и предложим 2–3 сценария роста.</p>
+          </div>
+          <a class="btn" href="#audit">Получить аудит</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Кейсы (заглушки)</h2>
+          <p class="muted">Здесь будут ваши реальные цифры. Пока — шаблоны для оформления.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <p class="badge">Кейс 1</p>
+            <h3 class="h3">Увеличили прямые продажи</h3>
+            <p class="muted">Проблема: высокая доля OTA, слабый сайт. Решение: упаковка, офферы, формы, аналитика.</p>
+            <div class="kpi">
+              <div class="kpi__item"><span class="kpi__num">+X%</span><span class="kpi__label">Direct</span></div>
+              <div class="kpi__item"><span class="kpi__num">+X%</span><span class="kpi__label">CR сайта</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="badge">Кейс 2</p>
+            <h3 class="h3">Подняли ADR без потери загрузки</h3>
+            <p class="muted">Проблема: “плоская” цена. Решение: тарифы, ограничения, прайс-календарь, сегментация.</p>
+            <div class="kpi">
+              <div class="kpi__item"><span class="kpi__num">+X%</span><span class="kpi__label">ADR</span></div>
+              <div class="kpi__item"><span class="kpi__num">+X%</span><span class="kpi__label">RevPAR</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="badge">Кейс 3</p>
+            <h3 class="h3">Сильнее межсезонье</h3>
+            <p class="muted">Проблема: провал спроса. Решение: пакеты, мероприятия, партнёрства, контент-план.</p>
+            <div class="kpi">
+              <div class="kpi__item"><span class="kpi__num">+X%</span><span class="kpi__label">Загрузка</span></div>
+              <div class="kpi__item"><span class="kpi__num">+X%</span><span class="kpi__label">Лиды</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt">
+          <a class="btn btn--ghost" href="#pricing">Выбрать пакет работ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Отзывы (заглушки)</h2>
+          <p class="muted">Вставишь реальные отзывы — текст/видео/скриншоты.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <figure class="card quote">
+            <blockquote>“Сделали понятную стратегию и план внедрения. Команда перестала тонуть в задачах, появились KPI.”</blockquote>
+            <figcaption class="muted small">Имя Фамилия — должность, объект</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>“После правок сайта и офферов заявки стали качественнее, менеджеры стали закрывать быстрее.”</blockquote>
+            <figcaption class="muted small">Имя Фамилия — должность, объект</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>“Порадовала структурность: диагностика, цифры, гипотезы, внедрение. Без воды.”</blockquote>
+            <figcaption class="muted small">Имя Фамилия — должность, объект</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Пакеты работ</h2>
+          <p class="muted">Цены — заглушки. Можно заменить на “от …” или скрыть полностью.</p>
+        </div>
+
+        <div class="grid grid--3 pricing">
+          <article class="card price">
+            <h3 class="h3">Старт</h3>
+            <p class="muted">Диагностика + быстрый план улучшений</p>
+            <div class="price__num">€ XXX</div>
+            <ul class="bullets">
+              <li>аудит сайта и воронки</li>
+              <li>3–5 точек роста</li>
+              <li>план на 14 дней</li>
+              <li>1 созвон</li>
+            </ul>
+            <a class="btn btn--wide btn--ghost" href="#audit">Выбрать</a>
+          </article>
+
+          <article class="card price price--featured">
+            <div class="badge badge--strong">Рекомендуем</div>
+            <h3 class="h3">Рост 60 дней</h3>
+            <p class="muted">Стратегия + внедрение с командой</p>
+            <div class="price__num">€ XXXX</div>
+            <ul class="bullets">
+              <li>позиционирование и офферы</li>
+              <li>revenue-план и тарифы</li>
+              <li>упаковка сайта/лендинга</li>
+              <li>еженедельные срезы KPI</li>
+            </ul>
+            <a class="btn btn--wide" href="#audit">Запросить</a>
+          </article>
+
+          <article class="card price">
+            <h3 class="h3">Сопровождение</h3>
+            <p class="muted">Ежемесячная работа по KPI</p>
+            <div class="price__num">€ XXXX / мес</div>
+            <ul class="bullets">
+              <li>план спроса и цены</li>
+              <li>маркетинг-план и контент</li>
+              <li>внутренние стандарты продаж</li>
+              <li>отчётность и контроль</li>
+            </ul>
+            <a class="btn btn--wide btn--ghost" href="#contacts">Обсудить</a>
+          </article>
+        </div>
+
+        <div class="note">
+          <p class="muted small">
+            Хотите без цен: замените блок на “Оставьте заявку — пришлём коммерческое предложение”.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audit / Lead Form -->
+    <section class="section section--alt" id="audit">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Бесплатный аудит</h2>
+          <p class="muted">Заполни форму — мы свяжемся и проведём короткий разбор. (Форма демо, без отправки на сервер.)</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="h3">Что нужно от вас</h3>
+            <ul class="list">
+              <li>ссылка на сайт (если есть)</li>
+              <li>город/локация и тип объекта</li>
+              <li>цель: заявки / бронь / продажи путёвок</li>
+              <li>в идеале: загрузка, ADR, доля OTA (если знаете)</li>
+            </ul>
+            <div class="callout callout--mini">
+              <p class="muted small"><strong>Подсказка:</strong> если цифр нет — ничего страшного. Начнём с диагностики.</p>
+            </div>
+          </div>
+
+          <form class="card form" id="leadForm" novalidate>
+            <div class="form__row">
+              <label class="form__label" for="name">Имя</label>
+              <input class="input" id="name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" />
+              <div class="form__error" data-error-for="name"></div>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="contact">Телефон или Telegram</label>
+              <input class="input" id="contact" name="contact" type="text" placeholder="+7… / @username" autocomplete="tel" />
+              <div class="form__error" data-error-for="contact"></div>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="site">Сайт (необязательно)</label>
+              <input class="input" id="site" name="site" type="url" placeholder="https://…" />
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="msg">Коротко о задаче</label>
+              <textarea class="input textarea" id="msg" name="msg" rows="4" placeholder="Что хотите улучшить?"></textarea>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" id="agree" />
+              <span>Согласен(на) на обработку данных</span>
+            </label>
+            <div class="form__error" data-error-for="agree"></div>
+
+            <button class="btn btn--wide" type="submit">Отправить заявку</button>
+            <p class="muted tiny">Демо-форма: покажет “успех” на странице. Для реальной отправки подключим Telegram/Email/CRM.</p>
+
+            <div class="form__success" id="formSuccess" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Частые вопросы</h2>
+          <p class="muted">Коротко и по делу. (Аккордеон работает через script.js)</p>
+        </div>
+
+        <div class="faq" data-accordion>
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false">
+              Сколько времени занимает результат?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Быстрые улучшения (офферы/сайт/воронка) дают эффект за 2–4 недели. Системный рост — 2–3 месяца и дальше.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false">
+              Вы делаете внедрение или только рекомендации?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Есть оба формата: аудит/план (рекомендации) и сопровождение (внедрение вместе с командой под KPI).</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false">
+              Что нужно предоставить для старта?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Ссылку на сайт, базовые цифры (если есть), список услуг/программ, материалы по продажам и доступ к аналитике (по согласованию).</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false">
+              Можно ли работать дистанционно?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Да. Большинство задач делаем онлайн: созвоны, документы, внедрение через чек-листы и контроль KPI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="section section--alt" id="contacts">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Контакты</h2>
+          <p class="muted">Заменишь заглушки на реальные контакты.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="h3">Связаться</h3>
+            <div class="contactList">
+              <a class="contact" href="tel:+70000000000">
+                <span class="contact__k">Телефон</span>
+                <span class="contact__v">+7 (000) 000-00-00</span>
+              </a>
+              <a class="contact" href="https://t.me/username" target="_blank" rel="noreferrer">
+                <span class="contact__k">Telegram</span>
+                <span class="contact__v">@username</span>
+              </a>
+              <a class="contact" href="mailto:hello@example.com">
+                <span class="contact__k">Email</span>
+                <span class="contact__v">hello@example.com</span>
+              </a>
+            </div>
+
+            <div class="mt">
+              <a class="btn" href="#audit">Запросить аудит</a>
+              <a class="btn btn--ghost" href="#top">Наверх ↑</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Короткая анкета (заглушка)</h3>
+            <p class="muted">Чтобы быстрее помочь, ответьте на 3 вопроса:</p>
+            <ol class="list list--ol">
+              <li>Тип объекта и локация</li>
+              <li>Главная цель на 90 дней</li>
+              <li>Самая большая боль в продажах/маркетинге</li>
+            </ol>
+            <p class="muted small">Можно отправить в Telegram/Email.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--footer">
+          <span class="brand__mark">●</span>
+          <span class="brand__text">ВашКонсалтинг</span>
+        </div>
+        <p class="muted small">© <span id="year"></span> Все права защищены.</p>
+      </div>
+
+      <div class="footer__right">
+        <a class="link muted small" href="#" onclick="return false;">Политика конфиденциальности (заглушка)</a>
+        <a class="link muted small" href="#" onclick="return false;">Публичная оферта (заглушка)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
